@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(redisRouter);
 
 app.use('/', (req, res) => {
-    res.send();
+    res.send("ok");
 });
 
 app.listen(port, () => console.log("Server connected, port:", port));
